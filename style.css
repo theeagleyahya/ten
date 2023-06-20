@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    min-height: 100vh;
+    position: relative;
+}
+
+main{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    max-width: 1440px;
+    min-height: 800px;
+    padding: 100px 170px;
+}
+
+#sec1{
+    width: 35%;
+    float: left;
+}
+
+#sec1 h1{
+    color: hsl(300, 43%, 22%);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-right: 0px;
+    line-height: 1;
+}
+
+#sec1 p{
+    margin-top: 20px;
+    color: hsl(303, 10%, 53%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+#sec2{
+    width: 50%;
+    float: right;
+}
+
+#sec2 p{
+    background-color: hsl(300, 24%, 96%);
+}
+
+#sec2 object{
+    margin-right: 5px;
+}
+
+#sec2 p{
+    padding: 15px;
+    border-radius: 5px;
+    width: 440px;
+    margin-top: 15px;
+}
+
+#sec2 p:nth-child(2){
+    margin-left: 45px;
+}
+
+#sec2 p:nth-child(3){
+    margin-left: 90px;
+}
+
+#sec2 span:nth-child(1){
+    padding: 0px 20px;
+}
+
+#sec2 span:nth-child(2){
+    color: hsl(300, 43%, 22%);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+}
+
+article{
+    display: flex;
+    justify-content: space-between;
+}
+
+article:last-child section{
+    padding: 40px 30px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    margin-top: 70px;
+    width: 350px;
+    height: 230px;
+}
+
+article:last-child p:first-child > object{
+    border-radius: 50%;
+    width: 40px;
+    float: left;
+    margin-right: 25px;
+}
+
+
+article:last-child .p1{
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    width: 200px;
+    float: left;
+    font-size: 17px;
+    position: relative;
+}
+
+article:last-child .p1::after{
+    position: absolute;
+    content: 'Verified Buyer';
+    left: 0;
+    top: 20px;
+    color: hsl(333, 80%, 67%);
+}
+
+article:last-child .p2{
+    color: white;
+    clear: both;
+    font-size: 17px;
+    line-height: 1.4;
+    padding-top: 20px;
+}
+
+article:last-child section:nth-child(2){
+    margin-top: 80px;
+}
+
+article:last-child section:nth-child(3){
+    margin-top: 92px;
+}
+
+
