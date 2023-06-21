@@ -1,138 +1,237 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-
 body{
-    
     min-height: 100vh;
+    height: max-content;
     position: relative;
+    height: 720px;
+    margin: 0;
 }
 
 main{
     position: absolute;
     inset: 0;
     margin: auto;
-    max-width: 1440px;
-    min-height: 800px;
-    padding: 100px 170px;
+    width: 1440px;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#sec1{
-    width: 35%;
+main > section{
+    width: 1100px;
+}
+
+#art1 #sec1{
+    width: 37%;
     float: left;
 }
 
-#sec1 h1{
-    color: hsl(300, 43%, 22%);
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 700;
+#art1 #sec1 h1{
     font-size: 3rem;
-    margin-right: 0px;
-    line-height: 1;
-}
-
-#sec1 p{
-    margin-top: 20px;
-    color: hsl(303, 10%, 53%);
     font-family: 'League Spartan', sans-serif;
-    font-size: 16px;
+    color: hsl(300, 43%, 22%);
+    margin: 0;
+    font-weight: 700;
+    line-height: .9;
+}
+
+#art1 #sec1 p{
+    font-size: 17px;
     line-height: 1.4;
+    font-family: 'League Spartan', sans-serif;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    margin-top: 30px;
 }
 
-#sec2{
-    width: 50%;
+#art1 #sec2{
     float: right;
+    width: 50%;
 }
 
-#sec2 p{
+#art1 #sec2 p{
     background-color: hsl(300, 24%, 96%);
-}
-
-#sec2 object{
-    margin-right: 5px;
-}
-
-#sec2 p{
-    padding: 15px;
-    border-radius: 5px;
+    padding: 15px 25px;
+    border-radius: 7px;
     width: 440px;
-    margin-top: 15px;
 }
 
-#sec2 p:nth-child(2){
+#art1 #sec2 p:nth-child(2){
     margin-left: 45px;
 }
 
-#sec2 p:nth-child(3){
+#art1 #sec2 p:nth-child(3){
     margin-left: 90px;
 }
 
-#sec2 span:nth-child(1){
-    padding: 0px 20px;
+#art1 #sec2 p > span:nth-child(1){
+    margin-right: 20px;
 }
 
-#sec2 span:nth-child(2){
+#art1 #sec2 p > span:nth-child(2){
     color: hsl(300, 43%, 22%);
     font-family: 'League Spartan', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 15px;
 }
 
-article{
+#art1 #sec2 object{
+    margin-right: 3px;
+}
+
+#art2{
     display: flex;
     justify-content: space-between;
-}
-
-article:last-child section{
-    padding: 40px 30px;
-    background-color: hsl(300, 43%, 22%);
-    border-radius: 10px;
-    margin-top: 70px;
-    width: 350px;
-    height: 230px;
-}
-
-article:last-child p:first-child > object{
-    border-radius: 50%;
-    width: 40px;
-    float: left;
-    margin-right: 25px;
-}
-
-
-article:last-child .p1{
-    color: white;
+    float: none;
+    clear: both;
+    padding-top: 54px;
+    margin-top: 200px;
+    color: hsl(0, 0%, 100%);
     font-family: 'League Spartan', sans-serif;
-    font-weight: 500;
-    width: 200px;
-    float: left;
-    font-size: 17px;
-    position: relative;
+    font-size: 17.56px;
+    line-height: 1.4;
+    height: auto;
+    z-index: 1;
 }
 
-article:last-child .p1::after{
-    position: absolute;
+
+#art2 section{
+    background-color: hsl(300, 43%, 22%);
+    width: 350px;
+    height: 235px;
+    border-radius: 10px;
+    padding: 30px 25px;
+}
+
+#art2 section:nth-child(2){
+    margin-top: 20px;
+}
+
+#art2 section:nth-child(3){
+    margin-top: 40px;
+}
+
+#art2 section object{
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+#art2 section .p1{
+    font-weight: 500;
+    position: relative;
+    float: left;
+    width: 200px;
+    margin-top: 0;
+}
+
+#art2 section .p1::after{
     content: 'Verified Buyer';
+    position: absolute;
     left: 0;
     top: 20px;
     color: hsl(333, 80%, 67%);
 }
 
-article:last-child .p2{
-    color: white;
-    clear: both;
-    font-size: 17px;
-    line-height: 1.4;
-    padding-top: 20px;
-}
-
-article:last-child section:nth-child(2){
+#art2 section .p2{
     margin-top: 80px;
-}
-
-article:last-child section:nth-child(3){
-    margin-top: 92px;
+    clear: both;
 }
 
 
+
+
+
+@media (max-width: 375px){
+    body{
+        width: 375px;
+        height: 1530px;
+        zoom: 1;
+    }
+
+    main{
+        width: 375px;
+        height: 1070px;
+        height: auto;
+        padding: 70px 25px;
+    }
+
+    main > section{
+        width: 100%;
+    }
+
+    #art1 #sec1{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    #art1 #sec1 h1{
+        line-height: .85;
+    }
+
+    #art1 #sec1 p{
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    #art1 #sec2{
+        float: none;
+        width: 100%;
+    }
+
+    #art1 #sec2 p{
+        width: 100%;
+    }
+
+    #art1 #sec2 p:nth-child(2){
+        margin-left: 0;
+    }
+    
+    #art1 #sec2 p:nth-child(3){
+        margin-left: 0;
+    }
+
+    #art1 #sec2 p > span:nth-child(1){
+        margin-right: 0;
+        display: block;
+        text-align: center;
+    }
+    
+    #art1 #sec2 p > span:nth-child(2){
+        text-align: center;
+        margin-top: 10px;
+        display: block;
+    }
+
+    #art2{
+        display: flex;
+        flex-direction: column;
+        padding-top: 34px;
+        border: 1px solid;
+        margin-top: 0px;
+    }
+
+    #art2 section{
+        background-color: hsl(300, 43%, 22%);
+        width: 325px;
+        height: 235px;
+        border-radius: 10px;
+        padding: 30px 25px;
+    }
+
+    #art2 section:nth-child(2){
+        margin-top: 15px;
+    }
+    
+    #art2 section:nth-child(3){
+        margin-top: 15px;
+    }
+
+
+
+}
