@@ -158,7 +158,7 @@ main > section{
     }
 
     main{
-        width: 375px;
+        width: 90%;
         height: 1070px;
         height: auto;
         margin: 0;
@@ -168,7 +168,7 @@ main > section{
     }
 
     main > section{
-        width: 325px;
+        width: 80%;
     
     }
 
